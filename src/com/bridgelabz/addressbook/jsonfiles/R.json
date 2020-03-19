@@ -1,0 +1,87 @@
+{
+	"Rakesh": [
+		{
+			"Adress": {
+				"pincode": 3746489,
+				"city": "dadar",
+				"street": "didak",
+				"state": "MH"
+			},
+			"First Name": "Rakesh",
+			"Last Name": "Roashan",
+			"Mob No": 3644748
+		}
+	],
+	"Gurang": [
+		{
+			"Adress": {
+				"pincode": 3746489,
+				"city": "dadar",
+				"street": "didak",
+				"state": "MH"
+			},
+			"First Name": "Rakesh",
+			"Last Name": "Roashan",
+			"Mob No": 3644748
+		},
+		{
+			"Adress": {
+				"pincode": 85754,
+				"city": "Andheri",
+				"street": "dunadal",
+				"state": "MH"
+			},
+			"First Name": "Gurang",
+			"Last Name": "Desai",
+			"Mob No": 6377374
+		}
+	],
+	"Abhishek": [
+		{
+			"Adress": {
+				"pincode": 3746489,
+				"city": "dadar",
+				"street": "didak",
+				"state": "MH"
+			},
+			"First Name": "Rakesh",
+			"Last Name": "Roashan",
+			"Mob No": 3644748
+		},
+		{
+			"Adress": {
+				"pincode": 85754,
+				"city": "Andheri",
+				"street": "dunadal",
+				"state": "MH"
+			},
+			"First Name": "Gurang",
+			"Last Name": "Desai",
+			"Mob No": 6377374
+		},
+		{
+			"Adress": {
+				"pincode": 857664,
+				"city": "Hydrabad",
+				"street": "Sapote",
+				"state": "TN"
+			},
+			"First Name": "Abhishek",
+			"Last Name": "Vaghole",
+			"Mob No": 647489
+		}
+	],
+	"Rupesh": [
+		{
+			"Adress": {
+				"pincode": 34343,
+				"city": "nagar",
+				"street": "lx",
+				"state": "gujarat"
+			},
+			"First Name": "Rupesh",
+			"Last Name": "Patil",
+			"Mob No": 9557448748
+		}
+	]
+}
