@@ -1,74 +1,54 @@
 {
-	"Rakesh": [
+	"Falit": [
 		{
 			"Adress": {
-				"pincode": 3746489,
-				"city": "dadar",
-				"street": "didak",
-				"state": "MH"
+				"pincode": 8945875,
+				"city": "Navasari",
+				"street": "Detun",
+				"state": "Gj"
 			},
-			"First Name": "Rakesh",
-			"Last Name": "Roashan",
-			"Mob No": 3644748
+			"First Name": "Falit",
+			"Last Name": "trivedi",
+			"Mob No": 73483933
 		}
 	],
-	"Gurang": [
+	"Gaurang": [
 		{
 			"Adress": {
-				"pincode": 3746489,
-				"city": "dadar",
-				"street": "didak",
-				"state": "MH"
+				"pincode": 674884,
+				"city": "valasad",
+				"street": "Guri",
+				"state": "GJ"
 			},
-			"First Name": "Rakesh",
-			"Last Name": "Roashan",
-			"Mob No": 3644748
-		},
+			"First Name": "Gaurang",
+			"Last Name": "Pant",
+			"Mob No": 6474898993
+		}
+	],
+	"Sagar": [
 		{
 			"Adress": {
-				"pincode": 85754,
-				"city": "Andheri",
-				"street": "dunadal",
-				"state": "MH"
+				"pincode": 874848,
+				"city": "DL",
+				"street": "zirza",
+				"state": "DL"
 			},
-			"First Name": "Gurang",
-			"Last Name": "Desai",
-			"Mob No": 6377374
+			"First Name": "Sagar",
+			"Last Name": "Wagh",
+			"Mob No": 64778498
 		}
 	],
 	"Abhishek": [
 		{
 			"Adress": {
-				"pincode": 3746489,
-				"city": "dadar",
-				"street": "didak",
-				"state": "MH"
-			},
-			"First Name": "Rakesh",
-			"Last Name": "Roashan",
-			"Mob No": 3644748
-		},
-		{
-			"Adress": {
-				"pincode": 85754,
-				"city": "Andheri",
-				"street": "dunadal",
-				"state": "MH"
-			},
-			"First Name": "Gurang",
-			"Last Name": "Desai",
-			"Mob No": 6377374
-		},
-		{
-			"Adress": {
-				"pincode": 857664,
-				"city": "Hydrabad",
-				"street": "Sapote",
+				"pincode": 84848,
+				"city": "chennai",
+				"street": "dugr",
 				"state": "TN"
 			},
-			"First Name": "Abhishek",
-			"Last Name": "Vaghole",
-			"Mob No": 647489
+			"First Name": "Rakesh",
+			"Last Name": "Patel",
+			"Mob No": 847575940
 		}
 	],
 	"Rupesh": [
