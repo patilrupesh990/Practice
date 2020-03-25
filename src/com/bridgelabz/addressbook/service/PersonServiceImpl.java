@@ -18,14 +18,23 @@ import com.bridgelabz.addressbook.utility.Util;
 
 public class PersonServiceImpl implements IPersonService {
 	static JSONArray personDetailArray = new JSONArray();
-	JSONObject finalObject = new JSONObject();
 	JSONParser parser = new JSONParser();
 	static Scanner scanner = new Scanner(System.in);
 	String originbook = "D:\\java programs\\javaProject\\Practice\\src\\com\\bridgelabz\\addressbook\\jsonfiles\\";
+	static JSONObject fileObject = new JSONObject();
+
+	public static void setFileObject(JSONObject object) {
+		fileObject = object;
+	}
+
+	public static JSONObject getFileObject() {
+		return fileObject;
+	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public void addPerson() {
+		JSONObject finalObject = new JSONObject();
 		JSONObject temp = new JSONObject();
 		Person person = new Person();
 		System.out.println("Enter FirstName");
@@ -56,6 +65,8 @@ public class PersonServiceImpl implements IPersonService {
 			personDetailArray.add(temp);
 			finalObject.put(person.getFirstName(), personDetailArray);
 		}
+		fileObject=null;
+		setFileObject(finalObject);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -141,7 +152,7 @@ public class PersonServiceImpl implements IPersonService {
 	}
 
 	public boolean save() {
-		return FileReadWrite.WriteinFile(finalObject.toJSONString(), originbook + AddressBookImpl.getBookName());
+		return FileReadWrite.WriteinFile(getFileObject().toJSONString(), originbook + AddressBookImpl.getBookName());
 	}
 
 	@Override
@@ -180,9 +191,7 @@ public class PersonServiceImpl implements IPersonService {
 				System.out.println("-----------------------------------------------------------------------");
 
 			});
-		}
-		else
-		{
+		} else {
 			System.out.println("The Person You Searched Not Found");
 		}
 	}

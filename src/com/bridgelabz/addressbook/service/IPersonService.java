@@ -2,9 +2,7 @@ package com.bridgelabz.addressbook.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
-import org.codehaus.jackson.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
