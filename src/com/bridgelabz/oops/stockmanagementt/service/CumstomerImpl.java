@@ -13,10 +13,11 @@ public class CumstomerImpl implements ICustomer {
 
 	static LinkedList<Customer> customerList = new LinkedList<Customer>();
 	static Scanner scanner = new Scanner(System.in);
-	Customer customer = new Customer();
+	Customer customer=null;
 
 	@Override
 	public void register() {
+		Customer customer = new Customer();
 		try {
 			System.out.println("Enter Name");
 			customer.setName(scanner.next());
@@ -40,14 +41,13 @@ public class CumstomerImpl implements ICustomer {
 		String name = scanner.next();
 		Optional<Customer> customerlist = customerList.stream()
 				.filter(p -> p.getName().equals(name) || p.getEmail().equals(name)).findAny();
-
 		if (customerlist.isPresent())
 			customer = customerlist.get();
 		else {
 			System.out.println("User Doesent Exist Please Register");
 			register();
 		}
-		
+
 		System.out.println("Enter Company Name/Symbol");
 		String compnayName = scanner.next();
 		Optional<Company> company = CompanyImpl.companyList.stream()
@@ -62,16 +62,15 @@ public class CumstomerImpl implements ICustomer {
 			customer.setTotalAssests(total);
 			try {
 				Optional<List<Company>> list = Optional.ofNullable(customer.getCompany());
-				if(list.isPresent()) {
+				if (list.isPresent()) {
 					list.get().add(p);
 					customer.setCompany(list.get());
-				}
-				else {
-					List<Company> clist=new LinkedList<Company>();
+				} else {
+					List<Company> clist = new LinkedList<Company>();
 					clist.add(p);
 					customer.setCompany(clist);
 				}
-				
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -85,14 +84,24 @@ public class CumstomerImpl implements ICustomer {
 
 	@Override
 	public void sell() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void totalValue() {
-		
+		System.out.println("Enter Customer Name/email");
+		String customerName = scanner.next();
+		Optional<Customer> customerlist = customerList.stream()
+				.filter(p -> p.getName().equals(customerName) || p.getEmail().equals(customerName)).findAny();
+		if (customerlist.isPresent()) {
+			customer = customerlist.get();
+			System.out.println(customerlist.get().getName()+"'s"+" Total Assets is "+customerlist.get().getTotalAssests());
+		} else {
+			System.out.println("User Doesent Exist Please Register");
+			register();
+		}
 	}
+
 	@Override
 	public void displayUsers() {
 		System.out.println("====================>>Customer List<<===========================");

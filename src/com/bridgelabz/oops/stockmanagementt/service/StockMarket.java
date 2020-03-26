@@ -49,6 +49,9 @@ public abstract class StockMarket {
 				break;
 			case 6:
 				mainMenu();
+				break;
+			case 7:
+				System.exit(0);
 			default:
 				System.out.println("Invalid input");
 				customerMenu();
@@ -77,6 +80,9 @@ public abstract class StockMarket {
 				break;
 			case 5:
 				mainMenu();
+				break;
+			case 6:
+				System.exit(0);
 			default:
 				System.out.println("Invalid input");
 				customerMenu();
